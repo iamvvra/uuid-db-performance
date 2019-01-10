@@ -222,8 +222,8 @@ DELETE 1
 Time: 2.742 ms
 ```
 ## Conclusion
-There seems to be some inconsistent performance different during inserts in case UUID is used as primary key, possible reasons could be the ordering the primary key column based on UUID string which has wider randomness.
+There seems to be some inconsistent performance different during inserts in case UUID is used as primary key, possible reasons could be the non sequential ordering in the primary key because of random UUID.
 
 ## TODO
+- [ ] Verify the performance of join queries
 - [ ] Analyze the internals to understand what is happening down there.
-
